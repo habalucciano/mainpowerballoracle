@@ -20,6 +20,56 @@ body {
     padding: 0 24px;
 }
 
+/* NEW: Site Header with Logo */
+.main-header {
+    background: #0A0B1A;
+    border-bottom: 1px solid rgba(255, 209, 102, 0.25);
+    padding: 16px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo on left, clean look */
+}
+
+.logo {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 1.9rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #FFD166 0%, #FFB347 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: inline-block;
+}
+
+.logo:hover {
+    transform: scale(1.02);
+    opacity: 0.95;
+}
+
+/* Responsive logo */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.6rem;
+    }
+    .main-header {
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4rem;
+    }
+}
+
 /* Sections */
 .section {
     padding: 80px 0;
