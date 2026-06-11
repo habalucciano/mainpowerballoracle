@@ -1,0 +1,251 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #111827;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Sections */
+.section {
+    padding: 80px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.section-sm {
+    padding: 60px 0;
+}
+
+.bg-dark {
+    background: #0A0B1A;
+    color: #ffffff;
+}
+
+.bg-gradient {
+    background: linear-gradient(135deg, #0A0B1A 0%, #1A1F3A 100%);
+    color: white;
+}
+
+.bg-light {
+    background: #F9FAFB;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px 32px;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-radius: 60px;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+    background: #FFD166;
+    color: #0A0B1A;
+    box-shadow: 0 8px 20px rgba(255, 209, 102, 0.25);
+}
+
+.btn-primary:hover {
+    background: #FFC107;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(255, 209, 102, 0.35);
+}
+
+.btn-outline-light {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    color: white;
+}
+
+.btn-outline-light:hover {
+    border-color: #FFD166;
+    background: rgba(255, 209, 102, 0.1);
+}
+
+.telegram-btn-large {
+    background: #0088cc;
+    color: white;
+    gap: 16px;
+    font-size: 1.35rem;
+    padding: 18px 44px;
+    border-radius: 60px;
+    transition: 0.2s;
+    box-shadow: 0 12px 28px rgba(0,136,204,0.3);
+}
+
+.telegram-btn-large:hover {
+    background: #006699;
+    transform: translateY(-3px);
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    font-family: 'Montserrat', 'Inter', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: #4B5563;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.glow-text {
+    background: linear-gradient(135deg, #FFD166, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Badge */
+.badge {
+    display: inline-block;
+    background: rgba(255, 209, 102, 0.15);
+    backdrop-filter: blur(4px);
+    padding: 6px 14px;
+    border-radius: 60px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #FFD166;
+    margin-bottom: 24px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 32px;
+    padding: 32px;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.05);
+    border: 1px solid #f1f1f1;
+    transition: 0.2s;
+}
+
+.card-dark {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.stat-highlight {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #FFD166;
+    margin-bottom: 8px;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #FFD166;
+    margin-bottom: 20px;
+}
+
+/* Grid layouts */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+/* Footer */
+.footer {
+    background: #0A0B1A;
+    color: #9CA3AF;
+    padding: 48px 0 32px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+hr {
+    margin: 40px 0 24px;
+    border: 0;
+    height: 1px;
+    background: rgba(255,255,255,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 56px 0;
+    }
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+    .telegram-btn-large {
+        font-size: 1.1rem;
+        padding: 14px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}
